@@ -18,16 +18,16 @@ const Navbar = () => {
             </Link>
           ))}
         </ul>
+      </div>
 
-        <div className="flexCenter gap-4">
-          {session ? (
-            <>
-              UserPhoto <Link href="/create-project">Share Work</Link>
-            </>
-          ) : (
-            <AuthProviders />
-          )}
-        </div>
+      <div className="flexCenter gap-4">
+        {session ? (
+          <>
+            UserPhoto <Link href="/create-project">Share Work</Link>
+          </>
+        ) : (
+          <AuthProviders />
+        )}
       </div>
     </nav>
   );
